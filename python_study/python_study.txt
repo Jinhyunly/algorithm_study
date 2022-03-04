@@ -31,3 +31,42 @@ list = [int(sys.stdin.readline()) for _ in range(9)]
 print("{:.3f}%".format(12.1235)) # 12.123%
 
 print("{:.3f}".format(12.1235))  # 12.123
+
+
+
+---------------------------------------------------
+
+#소수구하기
+
+import sys
+
+m, n = map(int, sys.stdin.readline().split())
+
+def is_prime_num(n):
+  for i in range(2, n):
+    if n%i == 0:
+      return False
+  return True
+
+for i in range(m, n+1):
+  if is_prime_num(i):
+    print(i)
+
+
+---------------------------------------------------
+
+ord(문자): 아스키 코드를 반환해준다
+chr(숫자):  숫자에 맞는 아스키 코드를 반환한다.
+
+print(chr(65)) #A
+print(ord("A")) #65
+
+
+---------------------------------------------------
+
+# find 함수
+
+print("abc".find("b"))  #문자열에 해당 문자가 있을 경우 문자열의 인덱스를 반환 값: 1
+print("abc".find("f"))  #문자열에 해당 문자가 없을 경우 -1을 반환
+
+
