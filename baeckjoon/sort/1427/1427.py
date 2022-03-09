@@ -15,7 +15,7 @@ for i in arr:
 # 리펙토링
 
 nums = input()
-nums = [int(n) for n in nums]
+nums = [int(n) for n in nums] #문자열을 숫자리스트로변경
 
 ordered_nums = sorted(nums, reverse = True)
 
