@@ -148,6 +148,23 @@ print(count_by_range(a, -1, 3))
 
 -------------------------------------------------
 
+# 리스트 데이터 2개 중 첫번째값 정렬
+
+listA = []
+listA.append((20, "test1"))
+listA.append((20, "abc1"))
+listA.append((19, "zz1"))
+
+listA.sort(key = lambda x : x[0])
+
+for data in listA:
+  print(data[0], data[1])
+
+#19 zz1
+#20 test1
+#20 abc1
+
+-------------------------------------------------
 다시풀어보자 
 
 문자열 문제 : 백준 1316
