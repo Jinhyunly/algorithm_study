@@ -165,6 +165,35 @@ for data in listA:
 #20 abc1
 
 -------------------------------------------------
+
+
+import itertools
+
+# permutations(순열) : n 개 중 r 개를 골라 순서를 정해 나열하는 가짓수
+# 순열은 순서를 고려한다
+# (A, B)와 (B, A)는 다른 것으로 취급
+
+arr = ['A', 'B', 'C']
+nPr = itertools.permutations(arr, 2)
+print(list(nPr))
+
+#결과 : [('A', 'B'), ('A', 'C'), ('B', 'A'), ('B', 'C'), ('C', 'A'), ('C', 'B')]
+
+
+# combinations(조합) : n개 중에서 r개 취한 조합
+# 순서를 고려하지 않음
+# (A, B)와 (B, A)는 같은 것으로 취급
+
+arr = ['A', 'B', 'C']
+nCr = itertools.combinations(arr, 2)
+print(list(nCr))
+
+#결과 : [('A', 'B'), ('A', 'C'), ('B', 'C')]
+
+
+-------------------------------------------------
+
+
 다시풀어보자 
 
 문자열 문제 : 백준 1316
