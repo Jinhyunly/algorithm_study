@@ -192,6 +192,15 @@ print(list(nCr))
 
 
 -------------------------------------------------
+# key, value
+
+id_list = ["muzi", "frodo", "apeach", "neo"]
+reports = {id:0 for id in id_list}
+reports["frodo"] += 1
+print(reports) 
+# 결과 : {'muzi': 0, 'frodo': 1, 'apeach': 0, 'neo': 0}
+
+-------------------------------------------------
 
 
 다시풀어보자 
