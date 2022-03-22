@@ -25,5 +25,4 @@ def solution(n, computers):
             # 정의된 BFS 함수 호출
             bfs(n, computers, i, visited)
             answer += 1
-    
     return answer
