@@ -216,6 +216,8 @@ print(priorities)
 -------------------------------------------------
 
 
+listA.sort(key = lambda x : x[0])
+
 #y좌표로 오름차순, 같다면 x오름차순
 arr.sort(key=lambda x:(x[1], x[0]))
 
