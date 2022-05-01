@@ -252,6 +252,27 @@ print(format(a,'.2f'))
 
 ---------------------------------------------------
 
+#문자열을 전부 대문자로 바꿔서 출력
+str = 'aaAA'
+print(str.upper())
+# AAAA
+
+#문자열을 전부 소문자로 바꿔서 출력
+str = 'aaAA'
+print(str.lower())
+#  aaaa
+
+#문자열의 모든 문자가 대문자인지 판별
+str = 'aaAA'
+print(str.isupper())
+# False
+
+#문자열의 모든 문자가 소문자인지 판별
+str = 'aaaa'
+print(str.islower())
+# True
+
+---------------------------------------------------
 라이브러리 공부
 bfs,dfs 다시공부
 
