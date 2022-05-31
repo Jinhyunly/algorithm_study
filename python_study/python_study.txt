@@ -284,5 +284,5 @@ a.isdigit()
 # TRUE
 문자열인지 확인하는 함수
 
-
+isnumeric()
 
